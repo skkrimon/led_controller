@@ -28,5 +28,9 @@ def init_program(message):
         basic.static(led_strip, message['r'], message['g'], message['b'])
         return f'initalizing program: {program}'
     
+    elif program == 'clear': 
+        basic.clear(led_strip)
+        return f'initalizing program: {program}'
+    
     else:
         return f'program: {program} is unknown'
