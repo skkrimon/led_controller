@@ -1,0 +1,4 @@
+jsonschema==4.17.3
+python-dotenv==0.21.1
+rpi_ws281x==4.3.4
+websockets==10.4
