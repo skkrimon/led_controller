@@ -14,7 +14,7 @@ except:
     print('Unable to load port from .env')
     exit()
 
-ws = websockets.serve(handler, 'localhost', port)
+ws = websockets.serve(handler, 'raspberrypi.local', port)
 print(f'Starting WebSocket Server on port {port}')
 
 if __name__ == '__main__':
