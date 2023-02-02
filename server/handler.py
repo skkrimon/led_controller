@@ -14,7 +14,6 @@ async def handler(ws, path):
                 res = init_program(message_json)
                 await ws.send(res)
             except Exception as e:
-                print(e)
                 await ws.send('ERROR: invalid json')   
     except ws.exceptions.ConnectionClosed as e:
         print('client disconnected')
